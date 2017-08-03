@@ -26,9 +26,9 @@ function rubberbandStart(x, y) {
 
 function rubberbandStretch(x, y) {
   rubberbandRectangle.left = x < mousedown.x ? x : mousedown.x
-  rubberbandRectangle.top = y < mousedown.y ? x : mousedown.y
+  rubberbandRectangle.top  = y < mousedown.y ? y : mousedown.y
 
-  rubberbandRectangle.width = Math.abs(x - mousedown.x)
+  rubberbandRectangle.width  = Math.abs(x - mousedown.x)
   rubberbandRectangle.height = Math.abs(y - mousedown.y)
 
   moveRubberbandDiv()
